@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <title>Go Go Parents!</title>
@@ -31,6 +30,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     <a href="#entertainment" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-red"><i class="fa fa-th-large fa-fw w3-margin-right"></i>E N T E R T A I N M E N T</a>
     <a href="#storybooth" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-light-green"><i class="fa fa-th-large fa-fw w3-margin-right"></i>S T O R Y B O O T H</a>
     <a href="#recipes" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-cyan"><i class="fa fa-th-large fa-fw w3-margin-right"></i>R E C I P E S</a>
+    <a href="#quiz" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-cyan"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Q U I Z</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-indigo"><i class="fa fa-envelope fa-fw w3-margin-right"></i>C O N T A C T</a>
     <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-purple"><i class="fa fa-envelope fa-fw w3-margin-right"></i>D E V E L O P E R</a>
   </div>
 
@@ -139,7 +140,7 @@ body {
     <a href="news"></a>
   <div class="w3-container w3-padding-large w3-khaki">
     <h4 id="news"><b><center>What is on the news today?</center></b></h4>
-<center>Parents should be aware of current issues and news regarding kids so that they can stay alert while taking care of them.</center>
+<center>Parents should be aware of current issues and news regarding kids so that they can stay alert while taking care of them</center>
     <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
 <br>
 <br>
@@ -375,8 +376,186 @@ This snacking recipes is very enjoyable to be eaten and make together with the k
   </header>
 
 
+<!DOCTYPE html>
+<html>
+<!-- CONTENT 8 quiz -->
+<header id="quiz">
+    <a href="quiz"></a>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+</style>
+</head>
+<body>
+  <div class="w3-container w3-padding-large w3-khaki">
+    <h4 id="news"><b><center>Quiz Time!</center></b></h4>
+    <h2>Question 1</h2>
+<p>What kind of song that suits children?</p>
+<button class="accordion">Twinkle twinkle little star</button>
+<div class="panel">
+  <p>Correct!!This popular nursery rhyme is a great way to help your baby enjoy music.</p>
+</div>
+
+<button class="accordion">Bursting out</button>
+<div class="panel">
+  <p>Wrong!! This is a black metal song</p>
+</div>
 
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+<h2>Question 2</h2>
+<p>Which book suits bedtime story for children?</p>
+<button class="accordion">The fault in our stars</button>
+<div class="panel">
+  <p>Wrong!! This is a novel that suits adult reading</p>
+</div>
+
+<button class="accordion">365 Bedtime stories and rhymes</button>
+<div class="panel">
+  <p>Correct!! A story or rhymes to share for every day of the year. Snuggle up at bedtime and enjoy drifting to sleep with these traditional stories</p>
+</div>
+
+
+
+<h2>Question 3</h2>
+<p>How to Encourage a Child's Brain Development?</p>
+<button class="accordion">Violent</button>
+<div class="panel">
+  <p>Wrong!!They will have higher rates of anxiety, depression, other mental health problems and suicide</p>
+</div>
+
+<button class="accordion">Read</button>
+<div class="panel">
+  <p>Correct!! Reading is one of the best ways to promote a child’s brain development. Even before he/she can recognize letters or words, reading kick starts language and communication skills</p>
+</div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-large w3-orange">
+    <h4 id="contact"><b>Contact us for any inquiries!</b></h4>
+    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
+        <p>gogoparents@gmail.com</p>
+      </div>
+      <div class="w3-third w3-teal">
+        <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
+        <p>Selangor, Malaysia</p>
+      </div>
+      <div class="w3-third w3-dark-grey">
+        <p><i class="fa fa-phone w3-xxlarge w3-text-light-grey"></i></p>
+        <p>0169926319</p>
+      </div>
+    </div>
+    <hr class="w3-opacity">
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+    </form>
+  </div>
+
+</script>
 
 
 <!-- CONTENT 7  -->
@@ -419,21 +598,20 @@ div.desc {
 
 <div class="gallery">
   <a target="_blank" href="image/10.jpg">
-    <img src="image/10.jpg" alt="Cinque Terre" width="600" height="400">
+    <img src="image/10.jpg" alt="Cinque Terre" width="800" height="600">
   </a>
   <div class="desc">My name is Nurul Najiha binti Othman (2018225414). I am the project manager for this website.</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="image/20.jpg">
-    <img src="image/20.jpg" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">My name is Nur Syahrain binti Azman (2018683396). I act as the designer for this website.</div>
+    <img src="image/20.jpg" alt="Forest" width="800" height="600">
+  </a><div class="desc">My name is Nur Syahrain binti Azman (2018683396). I act as the designer for this website.</div>
 </div>
 
 <div class="gallery">
   <a target="_blank" href="image/30.jpg">
-    <img src="image/30.jpg" alt="Northern Lights" width="600" height="400">
+    <img src="image/30.jpg" alt="Northern Lights" width="800" height="600">
   </a>
   <div class="desc">My name is Maizatul Akma binti Mohd Rusdi (2018682824). I'm the main programmer here.</div>
 </div>
